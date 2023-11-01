@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+}
+body{
+    margin:0;
+}
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+.container{
+    width: 1180px;
+    margin: auto;
+}
+.header{
+    height: 40px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-p {
+color: var(--Gray-1, #333);
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+}
+.header__search {
+width: 402px;
+height: 25px;
+border: none;
+border-bottom: 1px #333 solid;
+margin-right: 32;
+}
+
+.header__search::placeholder {
+    color: var(--Gray-3, #828282);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.header__search::focus{
+outline: none;
+color: #333;
+font-family: Rubik;
+font-size: 16px;
+font-weight: 500;
+}
+
+.header__search-btn {
+    background: none;
+    border: none;
+    color: #e5261e;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header__login {
+width: 113px;
+height: 38px;
+border: none;
+border-radius: 4px;
+background-color:#e5261e;
+color: #FFF;
+text-align: center;
+font-family: Rubik;
+font-size: 16px;
+font-weight: 500;
+}
+.header__login:hover {
+    background: #cc221b;
+    }
+
+.tabs {
+    display: flex; 
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 311px;
+    height: 42px; 
+    font-family: Rubik;
+    margin-top: 116px;
+    text-align: justify;
+    background: #FFF; 
+    }
+
+.tabs a:first-child {
+    margin-right: 24px;  
+    }
+
+.btn_films {
+    text-decoration: none;
+    width: 116px;
+    height: 33px; 
+    text-decoration: 0;
+    color: var(--Gray-1, #333); 
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin: auto;
+    }
+
+.btn_films:hover {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;  
+    } 
+        
+.btn_telec {
+    margin: auto;
+    width: 171px;
+    height: 33px; 
+    text-decoration: 0;
+    color: var(--Gray-1, #333); 
+    font-size: 28px;
+    }
+        
+.btn_telec:hover {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+    }
+
+.telecanali {
+    display: flex;
+    /*height: 1073px;*/
+    flex-direction: column;
+    margin: 36px auto 72px auto;
+}
+
+.telecanali_1 {
+    display: flex;
+    margin-bottom: 16px;
+    max-width: 1180px;
+    height: 162px;
+    border-radius: 8px;
+    background: #F2F2F2;
+}
+
+.header__login_user {
+    width: 113px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    background-color:white;
+    color: var(--red, #E5261E);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    }
+
+.logo {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+.left {
+    /*width: 400px;*/
+    margin: 49px 0 49px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    /*display: flex;*/
+    margin: auto 0;
+}
+
+.channels {
+    margin-top: 0;
+    margin-bottom: 17px;
+    color: #333;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+}
+.red {
+    margin: 0;
+	margin-bottom: 12px;
+	display: flex;
+	color: red;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+}
+.black {
+    margin: 0;
+    margin-bottom: 12px;
+    display: flex;
+    color: #333;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+}
+.time {
+    margin: 0;
+    margin-right: 16px;
+}
+.name {
+    margin: 0;
+}
+.footer {
+
+    width: 100%;
+    background-color: #F2F2F2;
+    height: 120px;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    
+    }
+    
+    .png_footer { 
+    display: flex;
+    margin-left: 19%;
+    margin-top: 1.5%;
+    position:relative;
+    }
+    
+    .footer_text {
+        font-size: 16px;
+    font-family: Rubik;
+    word-wrap: break-word;
+    }
+
+    @media screen and (max-width: 390px){
+
+        .container{
+            width: 390px;
+        }
+        .header {
+           flex-direction: column;
+           height: auto;
+        }
+        .header__search {
+            width: 290px;
+        }
+    
+        .header__search-btn {
+           margin-top: 13px;
+        }
+    
+        .header__login {
+            margin-top: 13px;
+        }
+    
+        .search_form{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        body {
+            width: 390px;
+        }
+
+        .left{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+        }
+
+        .right {
+            display: table-caption;
+        }
+        .red {
+            margin-left: 150px;
+        }
+        .black {
+            margin-left: 150px;
+        }
+        .channels {
+            margin-left: 150px;
+        }
+
+        .telecanali_1 {
+            width: 390px;
+        }
+
+
+        footer {
+            margin-top: 670px;
+        }
+        .footer_text {
+            height: 162px;
+        }
+        .png_footer {
+            margin-left: 2%;
+            margin-top: 9%;
+        }
+
+    }
